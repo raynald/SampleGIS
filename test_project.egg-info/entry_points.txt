@@ -1,3 +1,0 @@
-      [paste.app_factory]
-      main = test_project:main
-      
