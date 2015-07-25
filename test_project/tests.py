@@ -14,4 +14,7 @@ class ViewTests(unittest.TestCase):
         from .views import my_view
         request = testing.DummyRequest()
         info = my_view(request)
-        self.assertEqual(info['project'], 'test_project')
+        self.assertEqual(info.status, '200 OK')
+        print info
+        # body = result.app_iter[0]
+        #self.assertTrue(
