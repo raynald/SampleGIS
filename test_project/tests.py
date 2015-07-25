@@ -15,6 +15,6 @@ class ViewTests(unittest.TestCase):
         request = testing.DummyRequest()
         info = my_view(request)
         self.assertEqual(info.status, '200 OK')
-        print info
-        # body = result.app_iter[0]
-        #self.assertTrue(
+        body = result.app_iter[0]
+        self.assertTrue('ICI House' in body)
+
