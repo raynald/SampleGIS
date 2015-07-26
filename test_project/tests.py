@@ -1,7 +1,5 @@
 import unittest
-
 from pyramid import testing
-
 
 class ViewTests(unittest.TestCase):
     def setUp(self):
@@ -13,8 +11,4 @@ class ViewTests(unittest.TestCase):
     def test_my_view(self):
         from .views import my_view
         request = testing.DummyRequest()
-        info = my_view(request)
-        self.assertEqual(info.status, '200 OK')
-        body = result.app_iter[0]
-        self.assertTrue('ICI House' in body)
 

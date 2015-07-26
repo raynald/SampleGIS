@@ -6,5 +6,5 @@ In order to start project, please run in project directory:
 
 For running tests, try:
 
-    nosetests .
+    
 
