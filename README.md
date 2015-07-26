@@ -5,6 +5,4 @@ In order to start project, please run in project directory:
     pserve development.ini
 
 For running tests, try:
-
-    
-
+    nosetests .
